@@ -1,11 +1,10 @@
-# 🌀️ Flux Tutorials 🌀️
+# Raja Tutorials 
 
-This repository contains flux tutorials! It is an experiment to get ready
-for testing a new lab playground where a visitor can request a notebook
-to try out lab software. The repository will provide (optionally)
-automated builds for containers, or just notebooks that use containers
-elsewhere (e.g., Flux already has automated builds alongside the repository).
-These tutorials originally came from [the officials tutorials repository](https://github.com/flux-framework/Tutorials).
+This repository contains raja tutorials! It is an experiment to get ready
+for testing a new lab playground where a visitor can request a VSCode
+interface to try out lab software. The repository will provide (optionally)
+automated builds for containers, or the tutorial can be used statically.
+from [here](https://github.com/LLNL/raja-suite-tutorial).
 
 You can look at the [tutorial-actions](https://github.com/rse-ops/tutorial-actions)
 to better understand the automation and assets here. Each tutorial is focused
@@ -17,7 +16,7 @@ that can easily deploy them.
 License
 -------
 
-Copyright (c) 2022, Lawrence Livermore National Security, LLC. 
+Copyright (c) 2022-2023, Lawrence Livermore National Security, LLC. 
 Produced at the Lawrence Livermore National Laboratory.
 
 RADIUSS is licensed under the MIT license [LICENSE](./LICENSE).
