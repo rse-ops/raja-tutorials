@@ -18,9 +18,9 @@ USER ${USER}
 COPY --chown=rajadev:rajadev . $HOME/tutorial/
 
 WORKDIR $HOME/tutorial
-RUN git clone --recursive https://github.com/LLNL/blt.git ./blt && \
-    git clone --recursive https://github.com/LLNL/Umpire.git ./tpl/umpire && \
-    git clone --recursive https://github.com/LLNL/RAJA ./tpl/raja
+RUN git clone -b v0.5.2 --depth 1 --recursive https://github.com/LLNL/blt.git ./blt && \
+    git clone -b v2022.03.1 --depth 1 --recursive https://github.com/LLNL/Umpire.git ./tpl/umpire && \
+    git clone -b v2022.03.0 --depth 1 --recursive https://github.com/LLNL/RAJA ./tpl/raja
 
 WORKDIR $HOME/tutorial/build
 RUN . /opt/spack/share/spack/setup-env.sh && spack load cuda && \
