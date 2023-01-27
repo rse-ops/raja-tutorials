@@ -33,7 +33,7 @@ jobs:
     name: "Build ${{ matrix.result.container_name }}" 
     steps:
     - name: Run Actions Cleaner
-      runs:  rm -rf /usr/share/dotnet
+      run:  rm -rf /usr/share/dotnet
     - uses: rse-ops/ci/uptodate/build@main
       with:
         repo: rse-ops
