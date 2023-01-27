@@ -5,10 +5,13 @@
 # SPDX-License-Identifier: (BSD-3-Clause)
 ###############################################################################
 
-FROM ghcr.io/rse-ops/cuda-ubuntu-20.04:cuda-11.1.1 AS nvcc11
+ARG ubuntu_version=20.04
+FROM ghcr.io/rse-ops/cuda-ubuntu-${ubuntu_version}:cuda-11.1.1 AS nvcc11
 
 ARG USER=rajadev
 ENV HOME /home/${USER}
+ARG TOKEN=rajatoken
+ENV TOKEN=${TOKEN}
 
 RUN apt-get update && apt-get install -y supervisor
 
@@ -33,8 +36,11 @@ RUN tar xzf openvscode-server-v1.69.1-linux-x64.tar.gz && chown -R ${USER}:${USE
 
 USER root
 COPY ./supervisord.conf /etc/supervisord.conf
+COPY ./entrypoint.sh /entrypoint.sh
+
+# Generate command from environment variables - default port is 3000
 RUN sed -i "s/XXX/${USER}/g" /etc/supervisord.conf
 
 RUN touch /var/log/openvscode-server.log && chown -R ${USER}:${USER} /var/log/openvscode-server.log
-
-CMD ["/usr/bin/supervisord"]
+EXPOSE 3000
+CMD ["/entrypoint.sh"]

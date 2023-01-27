@@ -27,29 +27,8 @@ $ docker build -t raja-suite-2023 .
 And run the container locally (using default password):
 
 ```bash
-$ docker run -it -p 443:443 radiuss-aws-2022
+$ docker run -it -p 3000:3000 raja-suite-2023
 ```
 
-And then see the welcome message:
-
-```console
-$ docker run -it -p 443:443 radiuss-aws-2022
-🌀️ Welcome to the Flux Framework RADIUSS Tutorial! 🌀️
-If you are running this locally (and can see this message)
-You can open your browser to https://127.0.0.1.
-We use self-signed certificates, so you can proceed.
-Your login information is:
-
-🥑️ user: fluxuser
-🥑️ password: playground
-
-Have fun! ⭐️🦄️⭐️
-```
-
-To change the password:
-
-```bash
-$ docker run -it -p 443:443 --env GLOBAL_PASSWORD=newplayground radiuss-aws-2022
-```
-
-And follow the instructions to login and do the tutorial!
+And open your host to [127.0.0.0:3000](http://127.0.0.0:3000). You can open the tutorial by
+opening the folder at `/home/rajadev` and starting at the README.md.
