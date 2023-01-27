@@ -32,6 +32,8 @@ jobs:
     if: ${{ needs.generate.outputs.is_empty == 'false' }}
     name: "Build ${{ matrix.result.container_name }}" 
     steps:
+    - name: Run Actions Cleaner
+      uses: rse-ops/actions-cleaner/ubuntu@main
     - uses: rse-ops/ci/uptodate/build@main
       with:
         repo: rse-ops
