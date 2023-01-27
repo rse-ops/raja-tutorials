@@ -12,5 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     name: "Build ${{ matrix.result.container_name }}" 
     steps:
+    - uses: actions/checkout@v3
     - name: Manual Build
       run: docker build -f tutorials/raja-suite-ecp-2023/Dockerfile  --build-arg ubuntu_version=20.04 -t ghcr.io/rse-ops/raja-raja-suite-ecp-2023:ubuntu-20.04 tutorials/raja-suite-ecp-2023
