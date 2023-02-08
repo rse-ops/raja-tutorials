@@ -16,6 +16,12 @@ ENV TOKEN=${TOKEN}
 RUN apt-get update && apt-get install -y supervisor
 
 RUN useradd --create-home --shell /bin/bash ${USER}
+
+WORKDIR /opt/archives
+RUN curl -L https://github.com/gitpod-io/openvscode-server/releases/download/openvscode-server-v1.69.1/openvscode-server-v1.69.1-linux-x64.tar.gz > \
+    /opt/archives/openvscode-server-v1.69.1-linux-x64.tar.gz
+RUN tar xzf openvscode-server-v1.69.1-linux-x64.tar.gz && chown -R ${USER}:${USER} openvscode-server-v1.69.1-linux-x64
+
 USER ${USER}
 
 COPY --chown=rajadev:rajadev . $HOME/tutorial/
@@ -25,14 +31,10 @@ RUN git clone -b v0.5.2 --depth 1 --recursive https://github.com/LLNL/blt.git ./
     git clone -b v2022.03.1 --depth 1 --recursive https://github.com/LLNL/Umpire.git ./tpl/umpire && \
     git clone -b v2022.03.0 --depth 1 --recursive https://github.com/LLNL/RAJA ./tpl/raja
 
-WORKDIR $HOME/tutorial/build
-RUN . /opt/spack/share/spack/setup-env.sh && spack load cuda && \
-    cmake -DCMAKE_CXX_COMPILER=g++ -DENABLE_CUDA=On -DCMAKE_CUDA_STANDARD=14 -DCMAKE_CUDA_ARCHITECTURES=70 -DENABLE_OPENMP=On .. 
-
-WORKDIR /opt/archives
-RUN curl -L https://github.com/gitpod-io/openvscode-server/releases/download/openvscode-server-v1.69.1/openvscode-server-v1.69.1-linux-x64.tar.gz > \
-    /opt/archives/openvscode-server-v1.69.1-linux-x64.tar.gz
-RUN tar xzf openvscode-server-v1.69.1-linux-x64.tar.gz && chown -R ${USER}:${USER} openvscode-server-v1.69.1-linux-x64
+RUN . /opt/spack/share/spack/setup-env.sh && spack load cuda && mkdir -p ${HOME}/tutorial/build && cd ${HOME}/tutorial/build && \
+    cmake -DCMAKE_CXX_COMPILER=g++ -DENABLE_CUDA=On -DCMAKE_CUDA_STANDARD=14 -DCMAKE_CUDA_ARCHITECTURES=70 -DCMAKE_CUDA_FLAGS="--expt-extended-lambda" -DENABLE_OPENMP=On .. \
+    && make -j RAJA \
+    && make -j umpire
 
 USER root
 COPY ./supervisord.conf /etc/supervisord.conf
