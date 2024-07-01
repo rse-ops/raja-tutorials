@@ -1,0 +1,18 @@
+{
+    "LLNL/RAJA": {
+        "name": "LLNL/RAJA",
+        "description": "RAJA Performance Portability Layer (C++)",
+        "website": "",
+        "topics": [
+            "c-plus-plus",
+            "portability",
+            "programming-model",
+            "parallel-computing",
+            "raja",
+            "llnl",
+            "cpp",
+            "blt",
+            "radiuss"
+        ]
+    }
+}
