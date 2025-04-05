@@ -20,13 +20,13 @@
             "url": "http://choosealicense.com/licenses/bsd-3-clause/"
         },
         "stargazers": {
-            "totalCount": 509
+            "totalCount": 510
         },
         "mentionableUsers": {
             "totalCount": 72
         },
         "forks": {
-            "totalCount": 102
+            "totalCount": 103
         },
         "primaryLanguage": {
             "name": "C++"
@@ -39,13 +39,13 @@
         },
         "parent": null,
         "pullRequests_Open": {
-            "totalCount": 30
+            "totalCount": 29
         },
         "pullRequests_Closed": {
             "totalCount": 216
         },
         "pullRequests_Merged": {
-            "totalCount": 1046
+            "totalCount": 1047
         },
         "issues_Open": {
             "totalCount": 197
