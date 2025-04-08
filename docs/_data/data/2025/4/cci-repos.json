@@ -26,7 +26,7 @@
             "totalCount": 72
         },
         "forks": {
-            "totalCount": 103
+            "totalCount": 102
         },
         "primaryLanguage": {
             "name": "C++"
@@ -39,10 +39,10 @@
         },
         "parent": null,
         "pullRequests_Open": {
-            "totalCount": 29
+            "totalCount": 28
         },
         "pullRequests_Closed": {
-            "totalCount": 216
+            "totalCount": 217
         },
         "pullRequests_Merged": {
             "totalCount": 1047
