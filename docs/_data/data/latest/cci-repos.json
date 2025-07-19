@@ -20,7 +20,7 @@
             "url": "http://choosealicense.com/licenses/bsd-3-clause/"
         },
         "stargazers": {
-            "totalCount": 527
+            "totalCount": 528
         },
         "mentionableUsers": {
             "totalCount": 72
@@ -39,7 +39,7 @@
         },
         "parent": null,
         "pullRequests_Open": {
-            "totalCount": 32
+            "totalCount": 33
         },
         "pullRequests_Closed": {
             "totalCount": 222
@@ -48,7 +48,7 @@
             "totalCount": 1072
         },
         "issues_Open": {
-            "totalCount": 203
+            "totalCount": 204
         },
         "issues_Closed": {
             "totalCount": 337
