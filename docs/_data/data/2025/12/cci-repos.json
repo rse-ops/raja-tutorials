@@ -1,12 +1,12 @@
 {
-    "LLNL/RAJA": {
-        "nameWithOwner": "LLNL/RAJA",
+    "llnl/RAJA": {
+        "nameWithOwner": "llnl/RAJA",
         "name": "RAJA",
         "owner": {
-            "login": "LLNL",
+            "login": "llnl",
             "avatarUrl": "https://avatars.githubusercontent.com/u/5921419?v=4"
         },
-        "url": "https://github.com/LLNL/RAJA",
+        "url": "https://github.com/llnl/RAJA",
         "homepageUrl": "",
         "description": "RAJA Performance Portability Layer (C++)",
         "createdAt": "2016-04-28T23:46:22Z",
@@ -20,7 +20,7 @@
             "url": "http://choosealicense.com/licenses/bsd-3-clause/"
         },
         "stargazers": {
-            "totalCount": 555
+            "totalCount": 557
         },
         "mentionableUsers": {
             "totalCount": 75

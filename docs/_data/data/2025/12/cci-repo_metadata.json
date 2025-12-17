@@ -1,6 +1,6 @@
 {
-    "LLNL/RAJA": {
-        "name": "LLNL/RAJA",
+    "llnl/RAJA": {
+        "name": "llnl/RAJA",
         "description": "RAJA Performance Portability Layer (C++)",
         "website": "",
         "topics": [
