@@ -2,7 +2,7 @@
     "llnl/RAJA": {
         "languages": {
             "totalCount": 4,
-            "totalSize": 5568419,
+            "totalSize": 5568672,
             "nodes": [
                 {
                     "name": "C++",
@@ -32,7 +32,7 @@
                     "size": 67921
                 },
                 {
-                    "size": 15070
+                    "size": 15323
                 }
             ]
         }
