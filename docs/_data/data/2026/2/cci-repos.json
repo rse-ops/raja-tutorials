@@ -1,0 +1,57 @@
+{
+    "llnl/RAJA": {
+        "nameWithOwner": "llnl/RAJA",
+        "name": "RAJA",
+        "owner": {
+            "login": "llnl",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/5921419?v=4"
+        },
+        "url": "https://github.com/llnl/RAJA",
+        "homepageUrl": "",
+        "description": "RAJA Performance Portability Layer (C++)",
+        "createdAt": "2016-04-28T23:46:22Z",
+        "defaultBranchRef": {
+            "name": "develop"
+        },
+        "licenseInfo": {
+            "name": "Other",
+            "nickname": null,
+            "spdxId": "NOASSERTION",
+            "url": "http://choosealicense.com/licenses/other/"
+        },
+        "stargazers": {
+            "totalCount": 561
+        },
+        "mentionableUsers": {
+            "totalCount": 77
+        },
+        "forks": {
+            "totalCount": 108
+        },
+        "primaryLanguage": {
+            "name": "C++"
+        },
+        "languages": {
+            "totalCount": 4
+        },
+        "repositoryTopics": {
+            "totalCount": 9
+        },
+        "parent": null,
+        "pullRequests_Open": {
+            "totalCount": 39
+        },
+        "pullRequests_Closed": {
+            "totalCount": 231
+        },
+        "pullRequests_Merged": {
+            "totalCount": 1134
+        },
+        "issues_Open": {
+            "totalCount": 208
+        },
+        "issues_Closed": {
+            "totalCount": 369
+        }
+    }
+}

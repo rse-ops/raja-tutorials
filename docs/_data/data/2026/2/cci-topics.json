@@ -1,0 +1,72 @@
+{
+    "llnl/RAJA": {
+        "repositoryTopics": {
+            "totalCount": 9,
+            "nodes": [
+                {
+                    "topic": {
+                        "name": "c-plus-plus"
+                    },
+                    "resourcePath": "/topics/c-plus-plus",
+                    "url": "https://github.com/topics/c-plus-plus"
+                },
+                {
+                    "topic": {
+                        "name": "portability"
+                    },
+                    "resourcePath": "/topics/portability",
+                    "url": "https://github.com/topics/portability"
+                },
+                {
+                    "topic": {
+                        "name": "programming-model"
+                    },
+                    "resourcePath": "/topics/programming-model",
+                    "url": "https://github.com/topics/programming-model"
+                },
+                {
+                    "topic": {
+                        "name": "parallel-computing"
+                    },
+                    "resourcePath": "/topics/parallel-computing",
+                    "url": "https://github.com/topics/parallel-computing"
+                },
+                {
+                    "topic": {
+                        "name": "raja"
+                    },
+                    "resourcePath": "/topics/raja",
+                    "url": "https://github.com/topics/raja"
+                },
+                {
+                    "topic": {
+                        "name": "llnl"
+                    },
+                    "resourcePath": "/topics/llnl",
+                    "url": "https://github.com/topics/llnl"
+                },
+                {
+                    "topic": {
+                        "name": "cpp"
+                    },
+                    "resourcePath": "/topics/cpp",
+                    "url": "https://github.com/topics/cpp"
+                },
+                {
+                    "topic": {
+                        "name": "blt"
+                    },
+                    "resourcePath": "/topics/blt",
+                    "url": "https://github.com/topics/blt"
+                },
+                {
+                    "topic": {
+                        "name": "radiuss"
+                    },
+                    "resourcePath": "/topics/radiuss",
+                    "url": "https://github.com/topics/radiuss"
+                }
+            ]
+        }
+    }
+}
