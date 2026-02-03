@@ -20,7 +20,7 @@
             "url": "http://choosealicense.com/licenses/other/"
         },
         "stargazers": {
-            "totalCount": 561
+            "totalCount": 562
         },
         "mentionableUsers": {
             "totalCount": 77
@@ -39,13 +39,13 @@
         },
         "parent": null,
         "pullRequests_Open": {
-            "totalCount": 39
+            "totalCount": 37
         },
         "pullRequests_Closed": {
-            "totalCount": 231
+            "totalCount": 232
         },
         "pullRequests_Merged": {
-            "totalCount": 1134
+            "totalCount": 1135
         },
         "issues_Open": {
             "totalCount": 207
