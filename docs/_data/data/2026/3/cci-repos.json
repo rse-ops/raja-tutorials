@@ -1,0 +1,57 @@
+{
+    "llnl/RAJA": {
+        "nameWithOwner": "llnl/RAJA",
+        "name": "RAJA",
+        "owner": {
+            "login": "llnl",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/5921419?v=4"
+        },
+        "url": "https://github.com/llnl/RAJA",
+        "homepageUrl": "",
+        "description": "RAJA Performance Portability Layer (C++)",
+        "createdAt": "2016-04-28T23:46:22Z",
+        "defaultBranchRef": {
+            "name": "develop"
+        },
+        "licenseInfo": {
+            "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+            "nickname": "Modified BSD License",
+            "spdxId": "BSD-3-Clause",
+            "url": "http://choosealicense.com/licenses/bsd-3-clause/"
+        },
+        "stargazers": {
+            "totalCount": 567
+        },
+        "mentionableUsers": {
+            "totalCount": 77
+        },
+        "forks": {
+            "totalCount": 110
+        },
+        "primaryLanguage": {
+            "name": "C++"
+        },
+        "languages": {
+            "totalCount": 4
+        },
+        "repositoryTopics": {
+            "totalCount": 9
+        },
+        "parent": null,
+        "pullRequests_Open": {
+            "totalCount": 38
+        },
+        "pullRequests_Closed": {
+            "totalCount": 238
+        },
+        "pullRequests_Merged": {
+            "totalCount": 1142
+        },
+        "issues_Open": {
+            "totalCount": 207
+        },
+        "issues_Closed": {
+            "totalCount": 370
+        }
+    }
+}
