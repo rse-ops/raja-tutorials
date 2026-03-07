@@ -3,6 +3,11 @@
         "releases": {
             "nodes": [
                 {
+                    "name": "v2025.12.2",
+                    "publishedAt": "2026-03-06T16:48:39Z",
+                    "tagName": "v2025.12.2"
+                },
+                {
                     "name": "v2025.12.1",
                     "publishedAt": "2026-01-29T20:06:04Z",
                     "tagName": "v2025.12.1"
