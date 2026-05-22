@@ -39,10 +39,10 @@
         },
         "parent": null,
         "pullRequests_Open": {
-            "totalCount": 40
+            "totalCount": 42
         },
         "pullRequests_Closed": {
-            "totalCount": 242
+            "totalCount": 243
         },
         "pullRequests_Merged": {
             "totalCount": 1157
